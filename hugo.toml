@@ -6,23 +6,23 @@ theme = 'PaperMod'
 [params.profileMode]
 enabled = true
 subtitle = "Security Engineer"
-imageUrl = "static/images/profile.png"
+imageUrl = "images/profile.png"
 imageTitle = "profile picture"
 imageWidth = 120
 imageHeight = 120
 
 [[params.profileMode.buttons]]
-name = "Archive"
-url = "/archive"
+name = "Resume"
+url = "/resume"
 
 [[params.profileMode.buttons]]
-name = "Github"
-url = "https://github.com/"
+name = "blog"
+url = "/blog"
 
 [[params.socialIcons]]
-name = "<platform>"
-url = "<link>"
+name = "linkedin"
+url = "https://www.linkedin.com/in/yoan-faure/"
 
 [[params.socialIcons]]
-name = "<platform 2>"
-url = "<link2>"
+name = "email"
+url = "mailto:yoanfaure@hotmail.fr"
