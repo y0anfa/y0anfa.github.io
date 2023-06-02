@@ -3,26 +3,50 @@ languageCode = 'en-us'
 title = 'Yoan Faure'
 theme = 'PaperMod'
 
-[params.profileMode]
-enabled = true
-subtitle = "Security Engineer"
-imageUrl = "images/profile.png"
-imageTitle = "profile picture"
-imageWidth = 120
-imageHeight = 120
+[params]
+ShowToc = true
 
-[[params.profileMode.buttons]]
+
+    [params.profileMode]
+    enabled = true
+    subtitle = "Security Engineer"
+    imageUrl = "images/profile.png"
+    imageTitle = "profile picture"
+    imageWidth = 120
+    imageHeight = 120
+
+    [[params.profileMode.buttons]]
+    name = "Resume"
+    url = "/resume"
+
+    [[params.profileMode.buttons]]
+    name = "Blog"
+    url = "/blog"
+
+    [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/yoan-faure/"
+
+    [[params.socialIcons]]
+    name = "email"
+    url = "mailto:yoanfaure@hotmail.fr"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
 name = "Resume"
 url = "/resume"
+weight = 2
 
-[[params.profileMode.buttons]]
-name = "blog"
+[[menu.main]]
+name = "Docs"
+url = "/docs"
+weight = 3
+
+[[menu.main]]
+name = "Blog"
 url = "/blog"
-
-[[params.socialIcons]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/yoan-faure/"
-
-[[params.socialIcons]]
-name = "email"
-url = "mailto:yoanfaure@hotmail.fr"
+weight = 4
