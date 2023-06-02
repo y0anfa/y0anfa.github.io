@@ -1,4 +1,4 @@
 baseURL = 'http://y0anfa.github.io/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = 'papermod'
+theme = 'PaperMod'
