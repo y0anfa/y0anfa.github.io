@@ -6,7 +6,7 @@ theme = 'PaperMod'
 [params.profileMode]
 enabled = true
 subtitle = "Security Engineer"
-imageUrl = "statis/images/profile.png"
+imageUrl = "static/images/profile.png"
 imageTitle = "profile picture"
 imageWidth = 120
 imageHeight = 120
