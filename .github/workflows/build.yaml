@@ -29,10 +29,15 @@ defaults:
     shell: bash
 
 jobs:
+  # Pre-commit job
+  pre-commit:
+    uses: pre-commit/action@v3.0.0
+
   # SonarCloud scan job
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
+    needs: pre-commit
     steps:
       - uses: actions/checkout@v3
         with:
@@ -46,6 +51,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    needs: pre-commit
     env:
       HUGO_VERSION: 0.112.5
     steps:
