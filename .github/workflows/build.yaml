@@ -1,8 +1,7 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes and pull requests
   push:
     branches:
       - main
@@ -45,6 +44,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   # Build job
   build:
+    name: Build
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.112.5
@@ -82,6 +82,7 @@ jobs:
 
   # Deployment job
   deploy:
+    name: Deployment
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
