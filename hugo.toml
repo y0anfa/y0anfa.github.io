@@ -1,4 +1,28 @@
 baseURL = 'http://y0anfa.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Yoan Faure'
 theme = 'PaperMod'
+
+[params.profileMode]
+enabled = true
+subtitle = "Security Engineer"
+imageUrl = "statis/images/profile.png"
+imageTitle = "profile picture"
+imageWidth = 120
+imageHeight = 120
+
+[[params.profileMode.buttons]]
+name = "Archive"
+url = "/archive"
+
+[[params.profileMode.buttons]]
+name = "Github"
+url = "https://github.com/"
+
+[[params.socialIcons]]
+name = "<platform>"
+url = "<link>"
+
+[[params.socialIcons]]
+name = "<platform 2>"
+url = "<link2>"
