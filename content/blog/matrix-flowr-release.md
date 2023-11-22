@@ -1,7 +1,7 @@
 ---
 title: "Matrix Flowr Release"
+layout: "article"
 date: 2023-11-23
-description: "Announcing the release of Matrix Flowr, a small platform to manage your network flows matrices."
 draft: false
 ---
 
