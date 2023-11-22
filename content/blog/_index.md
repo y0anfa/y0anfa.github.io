@@ -7,4 +7,4 @@ draft: false
 
 # Blog
 
-- [Matrix Flowr Release]({{< ref "matrix-flowr-release" >}})
+- [Matrix Flowr Release]({{< ref "/blog/matrix-flowr-release.md" >}})
